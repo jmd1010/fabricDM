@@ -637,12 +637,15 @@ You can also create an alias by editing `~/.bashrc` or `~/.zshrc` and adding the
 alias pbpaste='xclip -selection clipboard -o'
 ```
 
-## Web Interface
+## Web Interface - Svelte Web GUI
 
 Fabric now includes a built-in web interface that provides a GUI alternative to the command-line interface and an out-of-the-box website for those who want to get started with web development or blogging.
+
 You can use this app as a GUI interface for Fabric, a ready to go blog-site, or a website template for your own projects.
 
-The `web/src/lib/content` directory includes starter `.obsidian/` and `templates/` directories, allowing you to open up the `web/src/lib/content/` directory as an [Obsidian.md](https://obsidian.md) vault. You can place your posts in the posts directory when you're ready to publish.
+This fabric web interface has been much improved with many new functionnalities such as pattern descriptions, pattern tags, favorites, language management, and more.
+
+The `web/src/lib/content` directory includes starter `.obsidian/` and `templates/` directories, allowing you to open up the `web/src/lib/content/` directory as an [Obsidian.md](https://obsidian.md) vault. You can place your posts in the posts directory when you're ready to publish. Please note that the web GUI pattern outputs saved to obsidian are located in `web/myfiles/Fabric-obsidian` and saved notes are located in `web/myfiles/inbox.
 
 ### Installing
 
@@ -662,7 +665,24 @@ pnpm run dev
 ## or your equivalent
 ```
 
-### Streamlit UI
+If you wish to use a script to start and stop the svelte servers you can see an example here (mac):
+https://github.com/danielmiessler/fabric/blob/main/Web%20Interface%20MOD%20Readme%20Files/WEB%20V2%20Install%20Guide.md 
+
+## Optional PDF-to-Markdown install for the web GUI svelte interface
+
+PDF-to-Markdown conversion feature allows you to use PDF documents as input. 
+
+cd web
+# Install PDF-to-Markdown dependencies in this specific order
+
+npm install -D patch-package
+
+npm install -D pdfjs-dist@2.5.207
+
+npm install -D github:jzillmann/pdf-to-markdown#modularize
+
+
+### Streamlit UI - alternative web interface 
 
 To run the Streamlit user interface:
 

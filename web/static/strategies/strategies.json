@@ -6,5 +6,5 @@
   { "name": "self-consistent", "description": "Self-Consistency Prompting" },
   { "name": "self-refine", "description": "Self-Refinement" },
   { "name": "standard", "description": "Standard Prompting" },
-  { "name": "tot", "description": "Tree-of-Thoughts (ToT)" }
+  { "name": "aot", "description": "Atom-of-Thought (AoT)" }
 ]
